@@ -15,7 +15,7 @@ import { prisma } from "../lib/prismaClient";
 import { ApolloClient, InMemoryCache } from "@apollo/client/core";
 import { SchemaLink } from "@apollo/client/link/schema";
 import { ArticlePublishedListener } from '../events/listeners/articlePublishedListener';
-import { AMQPPubSub } from 'graphql-amqp-subscriptions';
+import { AMQPPubSub } from '../amqp-subscriptions';
 
 const PORT = process.env.PORT || 4000
 
